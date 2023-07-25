@@ -93,5 +93,6 @@ The `wishlistSlice.js` file contains the Redux slice for managing the wishlist s
 Contributions are welcome! If you'd like to contribute to this project, feel free to submit a pull request.
 
 ## License
+ Ecommerce Website with React-Redux is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this project as per the terms of the MIT License.
 
 
