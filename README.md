@@ -16,7 +16,7 @@ This project is a simple ecommerce website that implements the concepts of React
 8. [Contributing](#contributing)
 9. [License](#license)
 
-##Demo
+## Demo
 
 ## Project Overview
 
