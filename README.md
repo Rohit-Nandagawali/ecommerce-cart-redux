@@ -22,7 +22,8 @@ This project is a simple ecommerce website that implements the concepts of React
 The ecommerce website built with React and Redux enables users to browse through a collection of products fetched using the FakeStore API. Users can add items to their cart, view the total cost, and easily remove items from the cart. Additionally, users can create a wishlist, add items to it, and remove items from the wishlist. The user interface might not be fully polished as the primary focus was on learning Redux concepts.
 
 ## Demo
-(https://github.com/Rohit-Nandagawali/ecommerce-cart-redux/assets/85486891/7dc0f930-c10b-41b6-964c-4726d1ae64bc)
+
+https://github.com/Rohit-Nandagawali/ecommerce-cart-redux/assets/85486891/7dc0f930-c10b-41b6-964c-4726d1ae64bc
 
 ## Features
 
