@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Ecommerce Website with React-Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple ecommerce website that implements the concepts of React and Redux. It allows users to browse products, add items to their cart, create a wishlist, and manage their shopping preferences. While the primary focus was to learn Redux, the project showcases various functionalities that make it an effective ecommerce solution.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+1. [Project Overview](#project-overview)
+2. [Demo](#demo)
+3. [Features](#features)
+4. [Technologies Used](#technologies-used)
+5. [Project Structure](#project-structure)
+6. [How to Run](#how-to-run)
+7. [Redux Slices](#redux-slices)
+    1. [cartSlice.js](#cartslicejs)
+    2. [wishlistSlice.js](#wishlistslicejs)
+8. [Contributing](#contributing)
+9. [License](#license)
 
-### `npm start`
+##Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The ecommerce website built with React and Redux enables users to browse through a collection of products fetched using the FakeStore API. Users can add items to their cart, view the total cost, and easily remove items from the cart. Additionally, users can create a wishlist, add items to it, and remove items from the wishlist. The user interface might not be fully polished as the primary focus was on learning Redux concepts.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Browse products on the home page fetched using the FakeStore API.
+- Add items to the cart and view the total cost of added items.
+- Easily remove items from the cart.
+- Create a wishlist and add products to it.
+- View the number of items in the cart and wishlist in the navbar.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- React Router DOM
+- Redux Toolkit
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The project is structured as follows:
+```
+- src/
+  - components/
+    - Navbar.js
+  - pages/
+    - Cart.jsx
+    - Wishlist.jsx
+    - Home.jsx
+  - redux/
+    - cartSlice.js
+    - wishlistSlice.js
+    - store.js
+  - App.js
+  - App.css
+  - index.js
+  - index.css
+  ```
 
-### `npm run eject`
+## How to Run
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run the project locally, follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository.
+2. Install the required dependencies using `npm install`.
+3. Start the development server using `npm start`.
+4. Open your browser and navigate to `http://localhost:3000/` to view the website.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Redux Slices
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### cartSlice.js
 
-## Learn More
+The `cartSlice.js` file contains the Redux slice for managing the cart state. It includes the following actions:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `addItems`: Adds items to the cart and updates the total cost.
+- `clearItems`: Clears all items from the cart and resets the total cost.
+- `removeItem`: Removes a specific item from the cart and updates the total cost accordingly.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### wishlistSlice.js
 
-### Code Splitting
+The `wishlistSlice.js` file contains the Redux slice for managing the wishlist state. It includes the following actions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `addWishlist`: Adds items to the wishlist.
+- `clearWishlist`: Clears all items from the wishlist.
+- `removeFromWishlist`: Removes a specific item from the wishlist.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+Contributions are welcome! If you'd like to contribute to this project, feel free to submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
